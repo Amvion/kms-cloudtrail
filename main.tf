@@ -59,7 +59,6 @@ data "aws_iam_policy_document" "cloudtrail_kms" {
 }
 
 resource "aws_kms_key" "cloudtrail" {
-  
   enable_key_rotation = var.enable_key_rotation
   policy              = data.aws_iam_policy_document.cloudtrail_kms.json
   
