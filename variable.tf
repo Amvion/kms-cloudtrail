@@ -2,6 +2,6 @@ variable "enable_key_rotation" {
   type = bool
 }
 
-variable "name"
+variable "name"{
 type = string
 }
